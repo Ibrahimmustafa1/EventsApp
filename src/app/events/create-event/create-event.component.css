@@ -1,0 +1,14 @@
+em {
+    float: right;
+    color: #e05c65;
+    padding-right: 10px;
+}
+
+.error {
+    background-color: #e3c3c5;
+    color: #999;
+}
+
+.col-md-6 {
+    padding: 40px !important;
+}

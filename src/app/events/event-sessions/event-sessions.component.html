@@ -1,0 +1,16 @@
+<div class="row" *ngFor="let session of FilterdSessions">
+    <div class="col-md-2">
+        <app-upvote *ngIf="this.auth.isAuthenticated()" (vote)="ToggleVote(session)" [count]="session.voters.length"
+            [voted]="userHasVoted(session)">
+        </app-upvote>
+    </div>
+    <div [ngClass]="{'col-md-10':this.auth.isAuthenticated(),'col-md-12':this.auth.isAuthenticated()}">
+        <app-collapse-session [SessionName]="session.name">
+            <h6>{{session.presenter}}</h6>
+            <span>Duration: {{session.duration|duration}}</span><br />
+            <span>Level: {{session.level}}</span>
+            <p>{{session.abstract}}</p>
+
+        </app-collapse-session>
+    </div>
+</div>

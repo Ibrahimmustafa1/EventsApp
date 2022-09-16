@@ -1,0 +1,8 @@
+#modal-simple {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.modal-content {
+    padding: 10px;
+}

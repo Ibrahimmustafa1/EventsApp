@@ -1,0 +1,15 @@
+.event-image {
+    height: 100px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.me-3 {
+    margin-left: 10px;
+}

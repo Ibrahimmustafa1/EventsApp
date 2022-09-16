@@ -1,0 +1,4 @@
+<div class="well pointable" (click)="Visible=!Visible">
+    <h4 class="well-title">{{SessionName}}</h4>
+    <ng-content *ngIf="Visible"></ng-content>
+    <div>

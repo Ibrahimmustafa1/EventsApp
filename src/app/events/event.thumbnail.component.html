@@ -1,0 +1,23 @@
+<div class="text-white">
+
+    <div class="well hoverwell thumbnail " [routerLink]="['/events',event.id]">
+        <h2>{{event.name|uppercase}}</h2>
+        <div>Date:{{event.date}}</div>
+        <div [ngClass]="addClasses()">Time:{{event.time}}</div>
+        <div>price:{{event.price|currency}}</div>
+        <div>
+            <span>Location:{{event.location?.address}}</span>
+            <span>&nbsp;</span>
+            <span>{{event.location?.city}},{{event.location?.country}}</span>
+        </div>
+    </div>
+</div>
+<style>
+    .green {
+        color: green !important;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+</style>
