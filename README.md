@@ -1,6 +1,6 @@
 # EventsApp
 
-EventsApp is a spa webapp it allows u to add events and edit it and emped sessions to this events 
+EventsApp is a spa webapp it allows u to add events and edit it and embed sessions to this events 
 # Demo
 
 
